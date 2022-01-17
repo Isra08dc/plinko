@@ -43,7 +43,10 @@ function setup() {
   }
 
   //crea los objetos partícula
-  
+  for (var j = 70; j <=width; j=j+50) { 
+    particles.push(new Particle(j,15));
+  }
+
     
 }
  
@@ -67,5 +70,7 @@ function draw() {
   }
 
   //muestra las partículas 
-
+  for (var i = 0; i < particles.length; i++) {
+    particles[i].display();
+  }
 }
