@@ -15,8 +15,8 @@ function setup() {
   ground = new Ground(width/2,height,width,20);
 
   //crea los objetos para dividir
-  for (var k = 0; k <=80; k = k + 80) {
-    divisions.push(new Divisions(kdivisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight))));
+  for (var k = 0; k <=800; k = k + 80) {
+    divisions.push(new Divisions(k,height-divisionHeight/2,10,divisionHeight));
   }
 
   //crea la primera fila de objetos plinko
